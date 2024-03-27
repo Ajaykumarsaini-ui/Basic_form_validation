@@ -66,7 +66,7 @@ function validateForm() {
         returnval = false;
         
     }
-    else if (email.length > 30) {
+    else if (email.length > 35) {
         
         seterror("email" , "*length is too long");
         returnval = false;
@@ -103,9 +103,11 @@ function validateForm() {
         
 
         if (validatePassword(password)) {
-            validationMessage.textContent = " ";
             // Here you can proceed with whatever action you want after a valid password is entered
-        } else {
+            console.log("hii")
+        }
+        else{
+            
             seterror("password" , "*please fulfil conditions");
             returnval = false;
         }

@@ -66,7 +66,7 @@ function validateForm() {
         returnval = false;
         
     }
-    else if (email.length > 15) {
+    else if (email.length > 30) {
         
         seterror("email" , "*length is too long");
         returnval = false;

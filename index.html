@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="javascript/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <form action="" name="myForm" onsubmit=" return validateForm()" method="post">
+
+            
+            <div class="form row">
+                <div action="" class="col-6 p-4">
+                    <div class="form-item p-3" id="name">
+                        <label for="" class="py-2">Name</label>
+                        <input type="text" name="fname" class="form-control" required> <b><span class="formerror text-danger"></span></b>
+                    </div>
+                    <div class="form-item p-3" >
+                        <label for="" class="py-2">Father's Name</label>
+                        <input type="text" class="form-control" name="fname2" required>
+                        <b><span class="formerror text-danger"></span></b>
+                        <small class="form-text text-muted"> this field is required</small>
+                    </div>
+
+                    <div class="form-item p-3" id="email">
+                        <label for="" class="py-2">Email</label>
+                        <input type="text" name="femail" class="form-control" required> <b><span class="formerror text-danger"></span></b>
+                    </div>
+                    
+
+            <div class="form-item p-3" id="mobile">
+                <label for="" class="py-2">Mobile No.</label>
+                <input type="number" class="form-control" name="fmobile" required><b><span class="formerror text-danger"></span></b>
+                
+            </div>
+        </div>
+        <div action="" class="col-6 p-4">
+            
+            <div class="form-item p-3">
+                <label for="" class="py-2">Gender:</label>
+
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+              
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+              
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+              
+                           </div>
+            <div class="form-item p-3" id="password">
+                <label for="" class="py-2">Password:</label>
+                <input type="password" class="form-control" name="fpassword" required>
+                <b><span class="formerror text-danger"></span></b>
+                <small class="form-text text-muted">password must be in a lowercase , 1 number and a special character and atleast 6 characters</small>
+            </div>
+            <div class="form-item p-3" id="cpassword">
+                <label for="" class="py-2">Confirm Password:</label>
+                <input type="password" class="form-control" name="fcpassword" required>
+                <b><span class="formerror text-danger"></span></b>
+            </div>
+            <div class="form-item p-3 text-center">
+                
+                <button class="btn bg-danger" type="submit" value="submit" >Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<script src="javascript/script.js"></script>
+
+</body>
+</html>
